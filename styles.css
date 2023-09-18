@@ -1,0 +1,283 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+:root{
+    --black:#212121;
+    --white:#edf2fc;
+}
+.dark-theme{
+    --black:#edf2fc;
+    --white:#212121;
+}
+#icon{
+    position:relative;
+    top: 25px;
+    left:60px;
+    cursor:pointer;
+}
+.container{
+    display:flex;
+    height:100vh;
+    background-color:var(--white) ;
+}
+
+.sidebar{
+    position:absolute;
+    background-color: rgb(101, 144, 144);
+    height:100vh;
+    /* width:250px; */
+    font-family:'Trebuchet MS', sans-serif;
+    transition: transform 0.3s ease-in;
+}
+.sidebar nav{
+    padding:40px;
+}
+.sidebar nav ul li{
+    font-size:26px;
+    padding:22px;
+}
+.sidebar nav ul li a{
+    text-decoration:none;
+    color:var(--white);
+}
+.main{
+    /* background-color: bisque; */
+    width:80vw;
+    margin:50px;
+}
+.infoContainer{
+    /* background-color: coral; */
+    height: 55vh;
+    width:70vw;
+    margin:105px auto;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.devPic img{
+    height:55vh;
+    width:310px;
+}
+.devInfo{
+    display:flex;
+    color:var(--black);
+    flex-direction:column;
+    justify-content: center;
+}
+.hi{
+    font-size: 48px;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: lighter;
+}
+.name{
+    font-size: 41px;
+    font-weight: bold;
+    color:rgba(44, 44, 170, 0.896);
+    font-family:'Trebuchet MS', sans-serif;
+    display: inline;
+}
+.typed-cursor{
+    /* This is used for typed js, we don't have this class , but this class is used for typed.js to control animation for cursor,here we set it to none as it creates problem in flexbox and as i dont have prior knowledge to it, let's see it to future... */
+    display: none;
+}
+.about{
+    font-size:27px;
+    margin-top: 7px;
+    font-weight: lighter;
+}
+.more{
+    font-size: 18px;
+    font-weight:550;
+    margin-top:10px;
+}
+.button{
+    margin-top:20px;
+}
+.btns{
+    padding:6px 10px;
+    border-radius:20px;
+    font-size:14px;
+    font-weight:560;
+    color:whitesmoke;
+    background-color: rgb(101, 144, 144);
+    margin:0 4px;
+}
+.btns-sm{ 
+    width:90px;
+    height:3vh;
+    font-size: 16px;
+    padding-bottom:25px;
+}
+/* .submitted{
+    position:absolute;
+    top:0;
+    left:30%;
+    width:400px;
+    background-color: beige;
+    border:1px solid rgb(101, 144, 144);
+    padding:15px;
+    text-align:center;  
+    border-radius:5px;
+    transform:translate(-50%,-50%) scale(0.1);
+    display:none;
+}
+.magic{
+    display:inline;
+    top:35%;
+    transform:translate(-50%,-50%) scale(1);
+}
+.tick{
+    position: relative;
+    top:-65px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 4px rgba(93, 86, 86, 0.929);
+    
+}
+.submitted h2{
+    font-size: 38px;
+    position: relative;
+    top:-45px;
+}
+.submitted p{
+    position: relative;
+    top:-30px;
+    padding:5px;
+}
+#ok-btn{
+    position:relative;
+    top:-10px;
+    width:100%;
+    font-size:18px;
+    padding:4px;
+    border-radius: 10px;
+    background-color: rgb(119, 217, 20);
+    border:none;
+    cursor:pointer;
+    color:white;
+    box-shadow: 2px 2px 4px rgba(93, 86, 86, 0.929);
+} */
+.btn-blg{
+    width:70px;
+    height:3vh;
+    font-size: 10px;
+    color:whitesmoke;
+    border-radius:15px;
+    background-color: rgb(101, 144, 144);
+}
+.btns:hover,.btn-blg:hover{
+    color: rgb(101, 144, 144);
+    background-color: whitesmoke;
+}
+.contactForm{
+    display:flex;
+    justify-content:space-around;
+    flex-wrap:wrap;
+    margin-top: 70px;
+}
+.formContent{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width:50vw;
+    height:333px;
+    margin:8px 15px;
+}
+.formField{
+    border:2px solid rgb(101, 144, 144);
+    border-radius: 12px;
+    background-color: rgba(121, 157, 157, 0.145);
+}
+.formField legend{
+    font-size: 38px;
+    font-family:monospace;
+    margin-left:5%;
+    background-color: rgba(121, 157, 157, 0.145);
+    border-radius: 10px;
+    border:1px solid rgb(101, 144, 144)
+}
+.same{
+    width: 18vw;
+    font-size:16px;
+    margin:7px 0;
+    border-radius:4px;
+}
+
+.forFont{
+    font-size: 19px;
+}
+#ex{
+    font-size: 18px;
+    margin:5px 0;
+}
+#description{
+    width:25vw;
+    height:5vh;
+    margin-bottom: 5px;
+}
+
+.formField span{
+    font-size:13px;
+    padding:8px;
+    color:cadetblue;
+}
+
+.blogItem{
+    margin:20px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.blogContainer h1{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-decoration: underline 2px rgb(56, 123, 123);
+}
+
+p{
+    font-family: monospace;
+}
+.introInfo{
+    margin:0 10px 0 15px;
+}
+.introInfo h2{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    margin: 5px 0;
+}
+.skillItem{
+    margin:5px 0;
+    display:flex;
+    align-items:center;
+    font-weight: 600;
+
+}
+.skill{
+    margin-left:10px;
+    width:200px;
+    height:6px;
+    background-color:coral;
+    border:1px solid black;
+}
+.mark{
+    width:60%;
+    height:6px;
+    background-color:thistle;
+}
+.mark2{
+    width:90%;
+    height:6px;
+    background-color:thistle;
+}
+.sidebarGo{
+    position:absolute;
+    transform:translate(-255px);
+}
+.hamburger{
+    position:absolute;
+    cursor: pointer;    /*When our pointer goes upto this cursor changes to pointer */
+    top:20px;
+    left:20px;
+}
+
+.cross{
+    margin-left:180px;
+}
